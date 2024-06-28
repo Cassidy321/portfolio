@@ -1,17 +1,17 @@
 import React from "react";
-import Layout from "./components/Layout";
-import AnimatedText from "./components/AnimatedText";
+import Layout from "../components/Layout";
+import AnimatedText from "../components/AnimatedText";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import { GithubIcon } from "./components/Icons";
+import { GithubIcon } from "../components/Icons";
 import snapchat from "../../public/images/projects/snapchat-screen.png";
 import portfolio from "../../public/images/projects/portfolio.png";
 import freeads from "../../public/images/projects/freeads.png";
 import comingsoon from "../../public/images/projects/comingsoon.jpg";
 import myquizz from "../../public/images/projects/myquizz.png";
-import TransitionEffect from "./components/TransitionEffect";
+import TransitionEffect from "../components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -123,7 +123,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Cassidy Nguyen</title>
+        <title>Portfolio</title>
         <meta name="description" content="description" />
       </Head>
       <TransitionEffect />

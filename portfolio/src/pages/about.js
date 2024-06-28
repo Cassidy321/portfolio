@@ -1,17 +1,44 @@
 import React from "react";
-import AnimatedText from "./components/AnimatedText";
-import Layout from "./components/Layout";
+import AnimatedText from "../components/AnimatedText";
+import Layout from "../components/Layout";
 import Head from "next/head";
-import TransitionEffect from "./components/TransitionEffect";
+import TransitionEffect from "../components/TransitionEffect";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/image-portfolio-about.png";
-import Skills from "./components/Skills";
+import Skills from "../components/Skills";
+import cssLogo from "../../public/images/logos/logo-css.png";
+import htmlLogo from "../../public/images/logos/logo-html.png";
+import jsLogo from "../../public/images/logos/logo-js.png";
+import laravelLogo from "../../public/images/logos/logo-laravel.png";
+import nextjsLogo from "../../public/images/logos/logo-nextjs.png";
+import nodejsLogo from "../../public/images/logos/logo-nodejs.png";
+import phpLogo from "../../public/images/logos/logo-php.png";
+import reactLogo from "../../public/images/logos/logo-react.png";
+import sqlLogo from "../../public/images/logos/logo-sql.png";
+import symfonyLogo from "../../public/images/logos/logo-symfony.png";
+import tailwindLogo from "../../public/images/logos/logo-tailwind.png";
+
+const skills = [
+  { logo: { lightSrc: jsLogo }, name: "JavaScript" },
+  { logo: { lightSrc: reactLogo }, name: "React" },
+  { logo: { lightSrc: nodejsLogo }, name: "NodeJS" },
+  { logo: { lightSrc: nextjsLogo }, name: "NextJS" },
+  { logo: { lightSrc: phpLogo }, name: "PHP" },
+  { logo: { lightSrc: laravelLogo }, name: "Laravel" },
+  { logo: { lightSrc: symfonyLogo }, name: "Symfony" },
+  { logo: { lightSrc: sqlLogo }, name: "SQL" },
+  { logo: { lightSrc: tailwindLogo }, name: "Tailwind" },
+  { logo: { lightSrc: htmlLogo }, name: "HTML" },
+  { logo: { lightSrc: cssLogo }, name: "CSS" },
+];
+
+
 
 const about = () => {
   return (
     <>
       <Head>
-        <title>Cassidy Nguyen</title>
+        <title>Portfolio</title>
         <meta name="description" content="description" />
       </Head>
       <TransitionEffect />
@@ -56,11 +83,11 @@ const about = () => {
                    (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            {/* <div className="col-span-8 mt-8 grid grid-cols-4 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 sm:justify-items-center gap-6">
+            <div className="col-span-8 mt-8 grid grid-cols-4 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 sm:justify-items-center gap-6">
                 {skills.map((skill, index) => (
                   <Skills key={index} logo={skill.logo} name={skill.name} />
                 ))}
-              </div> */}
+              </div>
           </div>
         </Layout>
       </main>
