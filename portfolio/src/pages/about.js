@@ -22,22 +22,22 @@ const about = () => {
           <div className="grid w-full grid-cols-8 gap-20 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <p className="font-medium">
-                Salut ! Moi c&apos;'est Cassidy Nguyen, un développeur web passionné
-                par la création d&apos;'expériences numériques intuitives et
-                efficaces. Je suis développeur fullstack mais j&apos;'ai la capacité à
+                Salut ! Moi c&apos;est Cassidy Nguyen, un développeur web passionné
+                par la création d&apos;expériences numériques intuitives et
+                efficaces. Je suis développeur fullstack mais j&apos;ai la capacité à
                 me concentrer aussi bien sur le front-end que sur le back-end
                 selon les besoins du projet sur lequel je travaille.
               </p>
               <p className="my-4 font-medium">
-                Actuellement en formation à la web@académie d&apos;'Epitech Marseille,
-                je suis à la recherche d&apos;'une alternance à partir de septembre
+                Actuellement en formation à la web@académie d&apos;Epitech Marseille,
+                je suis à la recherche d&apos;une alternance à partir de septembre
                 2024 pour une durée de 14 mois, avec un rythme de 3 semaines en
-                entreprise et 1 semaine à l&apos;'école.
+                entreprise et 1 semaine à l&apos;école.
               </p>
               <p className="font-medium">
                 Que ce soit pour développer un site web, une application mobile
                 ou tout autre produit numérique, je suis prêt à me donner à fond
-                pour chaque projet. J&apos;'ai hâte de mettre mes compétences et ma
+                pour chaque projet. J&apos;ai hâte de mettre mes compétences et ma
                 passion au service de votre équipe et de contribuer à vos futurs
                 succès.
               </p>

@@ -38,7 +38,7 @@ export default function Home() {
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 Je suis un développeur full-stack passioné par la création et
-                l&apos;'innovation dans le domaine du web. Découvrez moi à travers
+                l&apos;innovation dans le domaine du web. Découvrez moi à travers
                 quelques-uns de mes projets et voyez comment je peux enrichir
                 votre équipe avec mes compétences et ma passion pour le
                 développement.
