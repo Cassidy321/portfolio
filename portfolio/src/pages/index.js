@@ -32,13 +32,13 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Développeur web à la recherche d'une alternance"
+                text="Développeur web à la recherche d&apos;'une alternance"
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl
                  md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 Je suis un développeur full-stack passioné par la création et
-                l'innovation dans le domaine du web. Découvrez moi à travers
+                l&apos;'innovation dans le domaine du web. Découvrez moi à travers
                 quelques-uns de mes projets et voyez comment je peux enrichir
                 votre équipe avec mes compétences et ma passion pour le
                 développement.
