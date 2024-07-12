@@ -11,11 +11,13 @@ import portfolio from "../../public/images/projects/portfolio.png";
 import freeads from "../../public/images/projects/freeads.png";
 import comingsoon from "../../public/images/projects/comingsoon.jpg";
 import myquizz from "../../public/images/projects/myquizz.png";
+import myirc from "../../public/images/projects/myirc.png";
+import appmeteo from "../../public/images/projects/appmeteo.png";
 import TransitionEffect from "../components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, link, img, github }) => {
+const FeaturedProject = ({ type, title, summary, img, github }) => {
   return (
     <article
       className="w-full flex items-center justify-between relative rounded-br-2xl
@@ -27,11 +29,7 @@ const FeaturedProject = ({ type, title, summary, link, img, github }) => {
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark
       rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem] "
       />
-      <Link
-        href={link}
-        target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
-      >
+      <div className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full">
         <FramerImage
           src={img}
           alt={title}
@@ -41,14 +39,14 @@ const FeaturedProject = ({ type, title, summary, link, img, github }) => {
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-      </Link>
+      </div>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
         <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">
           {type}
         </span>
         <Link
-          href={link}
+          href="#"
           target="_blank"
           className="hover:underline underline-offset-2"
         >
@@ -68,7 +66,7 @@ const FeaturedProject = ({ type, title, summary, link, img, github }) => {
   );
 };
 
-const Project = ({ title, type, summary, link, img, github }) => {
+const Project = ({ title, type, summary, img, github }) => {
   return (
     <article
       className="w-full flex flex-col items-center justify-center rounded-2xl
@@ -80,11 +78,7 @@ const Project = ({ title, type, summary, link, img, github }) => {
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
       rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
       />
-      <Link
-        href={link}
-        target="_blank"
-        className="w-full cursor-pointer overflow-hidden rounded-lg"
-      >
+      <div className="w-full cursor-pointer overflow-hidden rounded-lg">
         <FramerImage
           src={img}
           alt={title}
@@ -94,7 +88,7 @@ const Project = ({ title, type, summary, link, img, github }) => {
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-      </Link>
+      </div>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className="text-primary font-medium text-xl dark:text-primaryDark
@@ -102,7 +96,7 @@ const Project = ({ title, type, summary, link, img, github }) => {
           {type}
         </span>
         <Link
-          href={link}
+          href="#"
           target="_blank"
           className="hover:underline underline-offset-2"
         >
@@ -139,7 +133,6 @@ const projects = () => {
                 summary="Re-création de l'application mobile Snapchat à partir d'une API fournie.
                 Le projet comprend des étapes comme créer une page d'inscription et de connexion,
                 sélectionner et envoyer des images, visionner les snaps reçus puis les supprimer."
-                link="/"
                 github="/"
                 type="Projet réalisé en React native + une API"
               />
@@ -148,8 +141,7 @@ const projects = () => {
               <Project
                 title="Portfolio"
                 img={portfolio}
-                link="/"
-                github="/"
+                github="https://github.com/Cassidy321/portfolio"
                 type="Projet réalisé en Next.js avec TailwindCSS"
               />
             </div>
@@ -157,7 +149,6 @@ const projects = () => {
               <Project
                 title="FreeAds"
                 img={freeads}
-                link="/"
                 github="/"
                 type="Projet réalisé en Laravel"
               />
@@ -166,18 +157,24 @@ const projects = () => {
               <Project
                 title="MyQuizz"
                 img={myquizz}
-                link="/"
                 github="/"
                 type="Projet réalisé en Symfony et TailwindCSS"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Alternance Quest"
-                img={comingsoon}
-                link="/"
+                title="MyIrc"
+                img={myirc}
                 github="/"
-                type="Projet réalisé en JS + le framework PhaserJS"
+                type="Réalisation d'un IRC avec NodeJS, React et SocketIO"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="AppMétéo"
+                img={appmeteo}
+                github="/"
+                type="App météo réalisé en JS avec l'API Visual Crossing"
               />
             </div>
           </div>
