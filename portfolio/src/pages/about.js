@@ -17,6 +17,7 @@ import reactLogo from "../../public/images/logos/logo-react.png";
 import sqlLogo from "../../public/images/logos/logo-sql.png";
 import symfonyLogo from "../../public/images/logos/logo-symfony.png";
 import tailwindLogo from "../../public/images/logos/logo-tailwind.png";
+import tsLogo from "../../public/images/logos/logo-typescript.png";
 
 const skills = [
   { logo: { lightSrc: jsLogo }, name: "JavaScript" },
@@ -30,6 +31,7 @@ const skills = [
   { logo: { lightSrc: tailwindLogo }, name: "Tailwind" },
   { logo: { lightSrc: htmlLogo }, name: "HTML" },
   { logo: { lightSrc: cssLogo }, name: "CSS" },
+  { logo: { lightSrc: tsLogo }, name: "TypeScript" },
 ];
 
 

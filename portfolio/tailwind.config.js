@@ -30,6 +30,7 @@ module.exports = {
         '06b6d4': '#06b6d4',
         'f5f5f5': '#f5f5f5',
         '1b1b1b': '#1b1b1b',
+        '3178c6': '#3178c6',
       },
     },
     screens: {

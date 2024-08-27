@@ -14,6 +14,7 @@ const techColors = {
   Symfony: "bg-333538",
   Tailwind: "bg-06b6d4",
   SQL: "bg-379ad6",
+  TypeScript: "bg-3178c6",
 };
 
 const Skills = ({ logo, name }) => {
