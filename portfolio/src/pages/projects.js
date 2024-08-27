@@ -45,7 +45,9 @@ const FeaturedProject = ({ type, title, summary, img, github }) => {
         <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base mb-5">
           {type}
         </span>
-        <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+        <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm
+          hover:underline underline-offset-2 cursor-default"
+        >
           {title}
         </h2>
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
@@ -92,15 +94,11 @@ const Project = ({ title, type, summary, img, github }) => {
         >
           {type}
         </span>
-        <Link
-          href="#"
-          target="_blank"
-          className="hover:underline underline-offset-2"
+        <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl
+          hover:underline underline-offset-2 cursor-default"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
-            {title}
-          </h2>
-        </Link>
+          {title}
+        </h2>
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
