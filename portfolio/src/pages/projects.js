@@ -153,12 +153,12 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="FreeAds"
-                img={freeads}
-                summary="Plateforme de petites annonces développée avec Laravel, permettant aux utilisateurs 
-                de publier et gérer leurs annonces."
-                github="#"
-                type="Projet réalisé en Laravel"
+                title="MyIrc"
+                img={myirc}
+                summary="Projet qui offre des fonctionnalités de chat en temps réel, 
+                la gestion de salons de discussion, et des utilisateurs connectés."
+                github="https://github.com/Cassidy321/myirc.git"
+                type="Réalisation d'un IRC avec NodeJS, React et SocketIO"
               />
             </div>
             <div className="col-span-12">
@@ -175,21 +175,21 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="MyIrc"
-                img={myirc}
-                summary="Projet qui offre des fonctionnalités de chat en temps réel, 
-                la gestion de salons de discussion, et des utilisateurs connectés."
-                github="https://github.com/Cassidy321/myirc.git"
-                type="Réalisation d'un IRC avec NodeJS, React et SocketIO"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
                 title="AppMétéo"
                 img={appmeteo}
                 summary="Application météo pour consulter les conditions météo actuelles et les prévisions selon la localisation choisie."
                 github="https://github.com/Cassidy321/app-meteo"
                 type="App météo réalisé en JS avec l'API Visual Crossing"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="FreeAds"
+                img={freeads}
+                summary="Plateforme de petites annonces développée avec Laravel, permettant aux utilisateurs 
+                de publier et gérer leurs annonces."
+                github="#"
+                type="Projet réalisé en Laravel"
               />
             </div>
           </div>
