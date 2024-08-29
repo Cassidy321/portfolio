@@ -175,21 +175,11 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="MyQuizz"
-                img={myquizz}
-                summary="Site de quiz interactif développée avec Symfony. Permet aux utilisateurs de créer, 
-                gérer et participer à des quiz variés."
-                github="#"
-                type="Projet réalisé en Symfony et TailwindCSS"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
                 title="MyIrc"
                 img={myirc}
                 summary="Projet qui offre des fonctionnalités de chat en temps réel, 
                 la gestion de salons de discussion, et des utilisateurs connectés."
-                github="#"
+                github="https://github.com/Cassidy321/myirc.git"
                 type="Réalisation d'un IRC avec NodeJS, React et SocketIO"
               />
             </div>
@@ -198,7 +188,7 @@ const projects = () => {
                 title="AppMétéo"
                 img={appmeteo}
                 summary="Application météo pour consulter les conditions météo actuelles et les prévisions selon la localisation choisie."
-                github="#"
+                github="https://github.com/Cassidy321/app-meteo"
                 type="App météo réalisé en JS avec l'API Visual Crossing"
               />
             </div>
