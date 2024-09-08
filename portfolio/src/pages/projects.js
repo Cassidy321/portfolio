@@ -17,7 +17,7 @@ import archideco from "../../public/images/projects/archideco-screen.png";
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, github }) => {
+const FeaturedProject = ({ type, title, summary, img, github1, github2 }) => {
   return (
     <article
       className="w-full flex items-center justify-between relative rounded-br-2xl
@@ -45,7 +45,8 @@ const FeaturedProject = ({ type, title, summary, img, github }) => {
         <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base mb-5">
           {type}
         </span>
-        <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm
+        <h2
+          className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm
           hover:underline underline-offset-2 cursor-default"
         >
           {title}
@@ -53,10 +54,17 @@ const FeaturedProject = ({ type, title, summary, img, github }) => {
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
-        <div className="mt-2 flex items-center">
-          <Link href={github} target="_blank" className="w-10">
-            <GithubIcon />
-          </Link>
+        <div className="mt-2 flex items-center space-x-4">
+          {github1 && (
+            <Link href={github1} target="_blank" className="w-10">
+              <GithubIcon />
+            </Link>
+          )}
+          {github2 && (
+            <Link href={github2} target="_blank" className="w-10">
+              <GithubIcon />
+            </Link>
+          )}
         </div>
       </div>
     </article>
@@ -94,7 +102,8 @@ const Project = ({ title, type, summary, img, github }) => {
         >
           {type}
         </span>
-        <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl
+        <h2
+          className="my-2 w-full text-left text-3xl font-bold lg:text-2xl
           hover:underline underline-offset-2 cursor-default"
         >
           {title}
@@ -132,13 +141,13 @@ const projects = () => {
               <FeaturedProject
                 title="E-commerce"
                 img={archideco}
-                summary="Ce projet est un site e-commerce complet développé pour un client réel.
-                Le front a été réalisé avec React et le back repose sur une API personnalisée 
-                développée avec Symfony. L’API gère l’ensemble des fonctionnalités comme la gestion des 
-                utilisateurs, la gestion des produits, le traitement des commandes, et l’intégration des 
-                paiements."
-                github="#"
-                type="Site E-commerce en React et une api Symfony"
+                summary="Ce projet est un site e-commerce complet développé pour un client réel. Le front a 
+                été réalisé avec React et le back repose sur une API personnalisée développée avec Symfony. 
+                L’API gère l’ensemble des fonctionnalités comme la gestion des utilisateurs, la gestion des 
+                produits, le traitement des commandes, et l’intégration des paiements."
+                github1="https://github.com/Cassidy321/E-commerceFront"
+                github2="https://github.com/Cassidy321/E-commerceServeur"
+                type="Site E-commerce en React avec une API Symfony"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -169,7 +178,7 @@ const projects = () => {
                 Ce projet inclut la conception de fonctionnalités clés telles que l'inscription et la 
                 connexion des utilisateurs, la sélection et l'envoi de photos, ainsi que la visualisation 
                 et la suppression de snaps. Réalisé en React Native pour une expérience mobile fluide."
-                github="https://github.com/Cassidy321/mysnapchat"
+                github1="https://github.com/Cassidy321/mysnapchat"
                 type="Projet réalisé en React native + une API"
               />
             </div>
