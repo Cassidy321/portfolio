@@ -44,7 +44,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="CV-Cassidy.pdf"
+                  href="CV-CassidyN.pdf"
                   target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
@@ -54,15 +54,15 @@ export default function Home() {
                 "
                   download={true}
                 >
-                  Télécharger <LinkArrow className={"w-6 ml-1"} />
+                  Télécharger<LinkArrow className={"w-6 ml-1"} />
                 </Link>
-                <Link
+                {/* <Link
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=cassidy.nguyen@epitech.eu"
                   target={"_blank"}
                   className="ml-4 text-lg font-medium underline capitalize text-dark dark:text-light md:text-base"
                 >
                   Me contacter
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

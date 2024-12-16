@@ -67,8 +67,7 @@ const NavBar = () => {
 
   return (
     <header
-      className="w-full px-32 py-8 font-medium flex items-center justify-between
-    dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8"
+      className="relative z-10 flex items-center justify-between w-full px-32 py-8 font-medium dark:text-light lg:px-16 md:px-12 sm:px-8"
     >
       <button
         className="flex-col items-center justify-center hidden lg:flex"
@@ -91,14 +90,15 @@ const NavBar = () => {
         ></span>
       </button>
 
-      <div className="w-full flex justify-between items-center lg:hidden">
+      <div className="flex items-center justify-between w-full lg:hidden">
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="Cassidy" className="mx-4" />
-          <CustomLink href="/projects" title="Projets" className="ml-4" />
+          <CustomLink href="/projects" title="Projets" className="mx-4" />
+          <CustomLink href="/contact" title="Contact" className="ml-4" />
         </nav>
 
-        <nav className="flex items-center justify-center flex-wrap">
+        <nav className="flex flex-wrap items-center justify-center">
           <motion.a
             href="https://github.com/Cassidy321"
             target={"_blank"}
@@ -142,7 +142,7 @@ const NavBar = () => {
        left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
        "
         >
-          <nav className="flex items-center flex-col justify-center">
+          <nav className="flex flex-col items-center justify-center">
             <CustomMobileLink
               href="/"
               title="Home"
@@ -158,18 +158,24 @@ const NavBar = () => {
             <CustomMobileLink
               href="/projects"
               title="Projets"
+              className=""
+              toggle={handleClick}
+            />
+            <CustomMobileLink
+              href="/contact"
+              title="Contact"
               className="mb-20"
               toggle={handleClick}
             />
           </nav>
 
-          <nav className="flex items-center justify-center flex-wrap mt-2">
+          <nav className="flex flex-wrap items-center justify-center mt-2">
             <motion.a
               href="/"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-6 mr-3 bg-light rounded-full dark:bg-dark"
+              className="w-6 mr-3 rounded-full bg-light dark:bg-dark"
             >
               <GithubIcon />
             </motion.a>

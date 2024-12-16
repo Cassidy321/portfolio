@@ -20,16 +20,13 @@ const FramerImage = motion(Image);
 const FeaturedProject = ({ type, title, summary, img, github1, github2 }) => {
   return (
     <article
-      className="w-full flex items-center justify-between relative rounded-br-2xl
-      rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark
-      dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
-    "
+      className="relative flex items-center justify-between w-full p-12 border border-solid shadow-2xl rounded-br-2xl rounded-3xl border-dark bg-light dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 "
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark
       rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem] "
       />
-      <div className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full">
+      <div className="w-1/2 overflow-hidden rounded-lg cursor-pointer lg:w-full">
         <FramerImage
           src={img}
           alt={title}
@@ -41,20 +38,19 @@ const FeaturedProject = ({ type, title, summary, img, github1, github2 }) => {
         />
       </div>
 
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base mb-5">
+      <div className="flex flex-col items-start justify-between w-1/2 pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="mb-5 text-xl font-medium text-primary dark:text-primaryDark xs:text-base">
           {type}
         </span>
         <h2
-          className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm
-          hover:underline underline-offset-2 cursor-default"
+          className="w-full my-2 text-4xl font-bold text-left cursor-default dark:text-light sm:text-sm hover:underline underline-offset-2"
         >
           {title}
         </h2>
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
-        <div className="mt-2 flex items-center space-x-4">
+        <div className="flex items-center mt-2 space-x-4">
           {github1 && (
             <Link href={github1} target="_blank" className="w-10">
               <GithubIcon />
@@ -74,16 +70,13 @@ const FeaturedProject = ({ type, title, summary, img, github1, github2 }) => {
 const Project = ({ title, type, summary, img, github }) => {
   return (
     <article
-      className="w-full flex flex-col items-center justify-center rounded-2xl
-      border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light
-      xs:p-4
-      "
+      className="relative flex flex-col items-center justify-center w-full p-6 border border-solid rounded-2xl border-dark bg-light dark:bg-dark dark:border-light xs:p-4 "
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
       rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
       />
-      <div className="w-full cursor-pointer overflow-hidden rounded-lg">
+      <div className="w-full overflow-hidden rounded-lg cursor-pointer">
         <FramerImage
           src={img}
           alt={title}
@@ -95,23 +88,21 @@ const Project = ({ title, type, summary, img, github }) => {
         />
       </div>
 
-      <div className="w-full flex flex-col items-start justify-between mt-4">
+      <div className="flex flex-col items-start justify-between w-full mt-4">
         <span
-          className="text-primary font-medium text-xl dark:text-primaryDark
-        lg:text-lg md:text-base"
+          className="text-xl font-medium text-primary dark:text-primaryDark lg:text-lg md:text-base"
         >
           {type}
         </span>
         <h2
-          className="my-2 w-full text-left text-3xl font-bold lg:text-2xl
-          hover:underline underline-offset-2 cursor-default"
+          className="w-full my-2 text-3xl font-bold text-left cursor-default lg:text-2xl hover:underline underline-offset-2"
         >
           {title}
         </h2>
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
-        <div className="w-full mt-2 flex items-center justify-between">
+        <div className="flex items-center justify-between w-full mt-2">
           <Link href={github} target="_blank" className="w-8 md:w-6">
             <GithubIcon />
           </Link>
@@ -129,7 +120,7 @@ const projects = () => {
         <meta name="description" content="description" />
       </Head>
       <TransitionEffect />
-      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
+      <main className="flex flex-col items-center justify-center w-full mb-16 dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Quelques projets"
